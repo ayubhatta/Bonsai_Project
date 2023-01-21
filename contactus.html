@@ -1,0 +1,94 @@
+
+<!-------------------------------------HTML file for 'ContactUs' page ------------------------------------->
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- title -->
+	<title>Contact Us</title>
+
+	<!-------connecting 'ContactUs' html file with 'ContactUs' css file ------->
+	<link rel="stylesheet" type="text/css" href="contactus.css">	
+</head>
+<body>
+	<!--------------------------- header ----------------------------->
+	<header>
+		<!------- Image of our logo ------->
+		<img class="logo" src="img.jpg ">
+	<nav>
+		<!-------------------------------- Nav Bar -------------------------------->
+		<ul class="navigation">
+			<li><a href="homepg.html">Home</a></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="research.html">Research</a></li>
+			<li><a href="portfolio.html">About Us</a></li>
+			<li><a href="contactus.html">Contact Us</a></li>
+		</ul>
+	</nav>   
+		<!-- div class carts -->
+		<div class="carts">
+			<!-- cart image -->
+			<img src="cart.jpg" width="25px"></a>
+		</div>  
+	</header>
+		<!-- class container -->
+	   <div class="container">
+	   	<h1 align="center" style="font-size: 26px">Contact Us</h1>
+	   	<p align="center">Submit your queries so we can help you and our other customers <br> and give utmost priorities to their needs and necessities.</p>
+  			<!------------ form ------------>
+			<form name="myForm" onsubmit="return validateForm()">
+				<p>Full name: <input type="text" name="name"></p>
+				<p>Email: <input type="text" name="email"></p>
+				<p>Message: <br> <textarea name="message" rows="10" cols="30" placeholder="Enter Message "></textarea></p> 
+				<p><input type="submit" value="Submit"></p>
+			</form>
+
+		</div>
+
+		<!--------------------------- footer --------------------------->
+		<div class="footer"> 
+			<!-- class socials -->
+    	<div class="socials" align="center">
+		    <ul>
+		    	<img src="fb.jpg" width="50px" class="sns">
+		    	<img src="insta.jpg" width="50px" class="sns">
+		    	<img src="twitter.jpg" width="50px" class="sns">
+		    </ul>
+		</div>
+
+		<!---------------------- footer Nav Bar ---------------------->
+		<div class="footer-links" align="center">
+			<ul>
+				<li class="links"><a href="homepg.html">Home</a></li>
+				<li class="links"><a href="products.html">Products</a></li>
+				<li class="links"><a href="blog.html">Blog</a></li>
+				<li class="links"><a href="research.html">Research</a></li>
+				<li class="links"><a href="portfolio.html">About Us</a></li>
+				<li class="links"><a href="contactus.html">Contact Us</a></li>
+			</ul>
+		</div>
+			<p align="center" style="font-size: 20px">Copyright &copy; Zen Bonsai. All Rights Reserved</p>
+		</div>
+		
+	<!------- Java Script ------->
+	<script>
+	function validateForm() 
+	{
+  		var name = document.forms["myForm"]["name"].value;
+  		var email = document.forms["myForm"]["email"].value;
+  		var message = document.forms["myForm"]["message"].value;
+  
+  		if (name == "" || email == "" || message == "") 
+		{
+    		alert("Empty fields. All fields are required.");
+  		}
+  
+  		else
+		{
+  			alert("Thank you for your message.")
+  		}
+	}
+	</script>
+
+</body>
+</html>

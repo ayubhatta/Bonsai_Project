@@ -1,0 +1,80 @@
+
+<!-------------------------------------HTML file for 'products2' page ------------------------------------->
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- title -->
+	<title>Products Description</title>
+
+	<!-- connecting 'products2' html file with 'products1.css' file -->
+	<link rel="stylesheet" type="text/css" href="product1.css">
+		</head>
+<body>
+	<!-- header -->
+	<header>
+		<!-------- Image of our logo ------->
+		<img class="logo" src="img.jpg ">
+
+		<!---------------------- Nav Bar ---------------------->
+	<nav>
+		<ul class="navigation">
+			<li><a href="homepg.html">Home</a></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="research.html">Research</a></li>
+			<li><a href="portfolio.html">About Us</a></li>
+			<li><a href="contactus.html">Contact Us</a></li>
+		</ul>
+	</nav>   
+
+	<!-- class carts -->
+		<div class="carts">
+			<!-- cart image -->
+			<a href="cart.html"><img src="cart.jpg" width="25px"></a>
+		</div>  
+	</header>
+
+	<!-- class description -->
+	 <div class="description">
+		<img src="img2.jpg" class="item-image">
+		<div class="desc-items">
+			<h3 class="ptitle center"><b>Japanese Green Maple Bonsai</b></h3>
+			<p class="price"><s>$75.00</s><br>$60.00</p>
+			<p style="color: grey">Acer palmatum, also referred to as Japanese maple, is a tiny tree or shrub that is indigenous to China, Korea, and Japan. Due to its delicate, finely divided leaves, stunning color, and capacity to grow a short, twisted trunk, it is made into a bonsai plant.<br><br> As long as the soil is well-draining and there is some shade or sunshine, Japanese green maple bonsai can be grown in a range of soils. The soil should be evenly moist. Overwatering can harm plants by causing root to rot. The best time to prune the tree is in the spring because it loses its leaves in the fall.</p>
+					
+			<!-- form -->
+			<form>
+                <label for="quantity" style="color: grey">Quantity :</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="9" value="1">
+            </form>
+			<button>Add to Cart</button>
+		</div>
+	</div>
+
+		<!------------ footer ------------>
+	<div class="footer">
+			
+		<!-- class socials -->
+    	<div class="socials" align="center">
+        	<ul>
+          		<img src="fb.jpg" width="50px" class="sns">
+          		<img src="insta.jpg" width="50px" class="sns">
+          		<img src="twitter.jpg" width="50px" class="sns">
+        	</ul>
+    	</div>
+
+		<!-- class footer-links -->
+    	<div class="footer-links" align="center">
+      		<ul>
+				<li class="links"><a href="homepg.html">Home</a></li>
+				<li class="links"><a href="products.html">Products</a></li>
+				<li class="links"><a href="blog.html">Blog</a></li>
+				<li class="links"><a href="research.html">Research</a></li>
+				<li class="links"><a href="portfolio.html">About Us</a></li>
+				<li class="links"><a href="contactus.html">Contact Us</a></li>
+			</ul>
+    	</div>
+      	<p align="center" style="font-size: 20px">Copyright &copy; Zen Bonsai. All Rights Reserved</p>
+    </div>
+</body>
+</html>
